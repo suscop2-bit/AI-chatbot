@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;      /* Increase this */
+    height: 50px;      /* Increase this */
+    padding: 0 20px;
+}
+
+.chatField {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    width: 100%;       
+}
+
+.chatField:focus {
+    outline: none;
+}
+
+#greeting {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.send-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px 15px 10px;
+  cursor: pointer;
+  font-size: 10px;
+  width: 8px;
+  height: 15px;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
